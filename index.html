@@ -2,21 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Cat Clicker</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 10px;
+        font-size: 40px;
+      }
+
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8%;
+      }
+
+      div.clickDiv {
+        max-width: 800px;
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="cat-name1"></h1>
-    <div id="cat-image1" class="clickDiv">
-      <img src="images\red-ginger-cat-computer-keyboard-lay-work-place-posing-90859680.jpg" alt="cat1">
-    </div>
+    <article class="container">
+      <h1 id="cat-name1"></h1>
+      <div id="cat-image1" class="clickDiv">
+        <img src="images\red-ginger-cat-computer-keyboard-lay-work-place-posing-90859680.jpg" alt="cat1">
+      </div>
 
-    <h1 id="cat-name2"></h1>
-    <div id="cat-image2" class="clickDiv">
-      <img src="images\кот-красного-имбиря-на-к-авиатуре-компьютера-90859692.jpg" alt="cat2">
-    </div>
+      <h1 id="cat-name2"></h1>
+      <div id="cat-image2" class="clickDiv">
+        <img src="images\кот-красного-имбиря-на-к-авиатуре-компьютера-90859692.jpg" alt="cat2">
+      </div>
 
-    <h1>Total Number of Clicks:</h1>
-    <h1 id="clickValue">0</h1>
+      <h1>Total Number of Clicks:</h1>
+      <h1 id="clickValue">0</h1>
+    </article>
     <script src="js/app.js"></script>
   </body>
 </html>
