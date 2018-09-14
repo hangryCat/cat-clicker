@@ -1,19 +1,27 @@
 * {
   margin: 0;
-  padding: 10px;
-  font-size: 40px;
+  padding: 0;
 }
 
-.container {
+body {
+  font-size: 26px;
+}
+
+#container {
   margin-left: auto;
   margin-right: auto;
-  padding: 8%;
+  max-width: 700px;
 }
 
-div.clickDiv {
-  max-width: 800px;
+section.cat-info {
+  padding-left: 15%;
+  border: solid 1px grey;
 }
 
-img {
-  width: 100%;
+div.clickable {
+  width: 80%;
+}
+
+div img {
+ width: 100%;
 }
