@@ -10,3 +10,10 @@ const catName2 = 'Jake';
 
 catElement1.innerText = catName1;
 catElement2.innerText = catName2;
+
+for (var i = 0; i < clickDiv.length; i++) {
+  clickDiv[i].addEventListener('click', function() {
+  console.log("click");
+  clickValue.innerText++;
+  });
+};
