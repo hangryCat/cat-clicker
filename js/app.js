@@ -22,12 +22,12 @@
 const container = document.querySelector('.container');
 
 const catsArray = [
-  {name: 'Dormammu', src: 'images\757904009_521561154_l.jpg'},
-  {name: 'Jake', src: 'images\cat.jpg'},
-  {name: 'Tomas', src: 'images\cute-cat-pictures-fluffy-cat-licking-its-paws.jpg'},
-  {name: 'Kuro', src: 'images\hamiltoncatqmode.jpg'},
-  {name: 'Tama', src: 'images\maxresdefault.jpg'},
-  {name: 'Unko', src: 'images\Top-plus-beaux-chats-9.jpg'}
+  {name: 'Dormammu', image: 'images/757904009_521561154_l.jpg'},
+  {name: 'Jake', image: 'images/cat.jpg'},
+  {name: 'Tomas', image: 'images/cute-cat-pictures-fluffy-cat-licking-its-paws.jpg'},
+  {name: 'Kuro', image: 'images/hamiltoncatqmode.jpg'},
+  {name: 'Tama', image: 'images/maxresdefault.jpg'},
+  {name: 'Unko', image: 'images/Top-plus-beaux-chats-9.jpg'}
 ]
 
 for (var i = 0; i < catsArray.length; i++) {
@@ -39,6 +39,7 @@ for (var i = 0; i < catsArray.length; i++) {
   catName.innerText = catsArray[i].name;
 
   const catImg = document.createElement('img');
+  catImg.setAttribute('src', catsArray[i].image);
 
   const catClicks = document.createElement('h1');
   const catValue = document.createElement('h1');
