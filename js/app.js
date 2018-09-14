@@ -11,6 +11,8 @@ const catsArray = [
 ];
 
 for (var i = 0; i < catsArray.length; i++) {
+  let cat = catsArray[i].name;
+
   const catInfo = document.createElement('section');
   catInfo.classList.add('cat-info');
   container.appendChild(catInfo);
@@ -22,6 +24,10 @@ for (var i = 0; i < catsArray.length; i++) {
   const catDiv = document.createElement('div');
   catDiv.classList.add('clickable');
   catInfo.appendChild(catDiv);
+  catDiv.addEventListener('click', function() {
+    console.log(cat + '\'s image was clicked!');
+    catValue.innerText++;
+  });
 
   const catImg = document.createElement('img');
   catImg.setAttribute('src', catsArray[i].image);
