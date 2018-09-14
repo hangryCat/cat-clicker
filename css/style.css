@@ -7,21 +7,28 @@ body {
   font-size: 26px;
 }
 
-#container {
+article#container {
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
-}
-
-section.cat-info {
-  padding-left: 15%;
-  border: solid 1px grey;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 div.clickable {
-  width: 80%;
+  width: 100%;
+  height: 210px;
 }
 
 div img {
  width: 100%;
+ height: 100%;
+}
+
+section.cat-info {
+  width: 45%;
+  margin: 8px;
+  padding: 8px;
+  border: solid 1px grey;
 }
